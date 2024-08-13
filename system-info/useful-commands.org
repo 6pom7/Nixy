@@ -1,0 +1,16 @@
+#+title: Useful Commands
+
+* System genearations (the ones at boot)
+** List all system genearations
+#+begin_src sh
+nix profile history --profile /nix/var/nix/profiles/system
+#+end_src sh
+** Delete older system genearations
+#+begin_src sh
+
+# Delete all historical versions older than 7 days
+sudo nix profile wipe-history --older-than 7d --profile /nix/var/nix/profiles/system
+
+# Run garbage collection after wiping history
+sudo nix-collect-garbage --delete-old
+#+end_src sh
