@@ -7,7 +7,9 @@
         theme = "Aquarium Dark";
 
         settings = {
-            background_opacity = lib.mkForce 0; 
+            background_opacity = lib.mkForce "0.8"; 
+            background_blur = lib.mkForce "0";
+            font_size = 15;
         };
     };  
 }
