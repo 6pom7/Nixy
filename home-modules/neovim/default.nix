@@ -39,8 +39,27 @@
     };
 
     plugins = {
-      lightline.enable = true;
+        airline = {
+          enable = true;
+          settings.theme = "dark";
+        };
     };
+
+    "ftplugin/nix.lua" = {
+      opts = {
+        expandtab = true;
+        shiftwidth = 2;
+        tabstop = 2;
+      };
+    }; 
+
+    "ftplugin/dart.lua" = {
+      opts = {
+        expandtab = true;
+        shiftwidth = 2;
+        tabstop = 2;
+      };
+    }; 
 
   };
 }
