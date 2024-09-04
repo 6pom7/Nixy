@@ -45,21 +45,27 @@
         };
     };
 
-    "ftplugin/nix.lua" = {
-      opts = {
-        expandtab = true;
-        shiftwidth = 2;
-        tabstop = 2;
-      };
-    }; 
+    # Files added
+    files = {
 
-    "ftplugin/dart.lua" = {
-      opts = {
-        expandtab = true;
-        shiftwidth = 2;
-        tabstop = 2;
-      };
-    }; 
+      "ftplugin/nix.lua" = {
+        opts = {
+          expandtab = true;
+          shiftwidth = 2;
+          tabstop = 2;
+        };
+      }; 
+
+      "ftplugin/dart.lua" = {
+        opts = {
+          expandtab = true;
+          shiftwidth = 2;
+          tabstop = 2;
+        };
+      }; 
+
+    };
+
 
   };
 }
