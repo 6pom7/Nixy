@@ -11,5 +11,9 @@
             background_blur = lib.mkForce "0";
             font_size = 15;
         };
+
+        keybindings = {
+          "ctrl+t" = "new_tab_with_cwd";
+        };
     };  
 }

@@ -58,6 +58,7 @@
         "$mod, W, exec, $browser"
         "$mod, E, exec, $editor"
         "$mod, A, exec, rofi -show drun -show-icons"
+        "$mod, D, togglespecialworkspace"
 
         # Utilites
         "$mod+SHIFT, S, exec, grim -g \"$(slurp)\" - | swappy -f -"

@@ -90,6 +90,8 @@
   
   # Enable bluetooth
   hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
 
   # Enable sound with pipewire.
   hardware.pulseaudio.enable = false;
@@ -164,14 +166,16 @@
     # [[[ DEVELOPMENT ]]]
     python3
     godot_4
+    inkscape
     # [[ WEB ]]
     nodePackages_latest.typescript-language-server
     typescript
     # [[ FLUTTER ]]
     gst_all_1.gstreamer
+    google-chrome
+    filezilla
     # flutter
-    # android-studio
-    # jdk
+    jdk
 
     # [[[ SCHOOL ]]]
     chromium
@@ -183,7 +187,9 @@
 
     # [[[ OTHER ]]]
     discord
+    # [[[ RECORDING ]]]
     obs-studio
+    chatterino2
     vlc
     ];
   };
@@ -207,6 +213,17 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    android-studio
+    flutter
+    vscode
+
+    R
+    rstudio
+    
+    # office
+    libreoffice-qt
+    hunspell
+    hunspellDicts.en_US
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
   ];
